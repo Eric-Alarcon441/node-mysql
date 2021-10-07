@@ -9,5 +9,5 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../app/views'));
 
 //middleware
-app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 module.exports = app;
